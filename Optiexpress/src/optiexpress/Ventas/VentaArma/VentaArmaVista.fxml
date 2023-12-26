@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="416.0" prefWidth="1341.0" style="-fx-background-color: #f0f2f5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="optiexpress.Ventas.VentaArma.VentaArmaVistaController">
+   <children>
+      <Label layoutX="504.0" layoutY="21.0" text="VENTA DE ARMAZONES">
+         <font>
+            <Font name="Malgun Gothic" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ProductosTableview" layoutX="21.0" layoutY="155.0" prefHeight="213.0" prefWidth="771.0">
+        <columns>
+          <TableColumn fx:id="ColIdArma" minWidth="0.0" prefWidth="0.0" text="ID Armazon" />
+            <TableColumn fx:id="ColMarca" prefWidth="219.19997787475586" text="Marca" />
+          <TableColumn fx:id="ColModelo" minWidth="0.0" prefWidth="154.0" text="Modelo" />
+            <TableColumn fx:id="ColMaterial" prefWidth="148.0" text="Material" />
+            <TableColumn fx:id="ColCantidad" prefWidth="135.0" text="Cantidad" />
+            <TableColumn fx:id="ColPrecio" prefWidth="114.0" text="Precio" />
+        </columns>
+      </TableView>
+      <TextField fx:id="BuscaArma" layoutX="21.0" layoutY="112.0" prefHeight="25.0" prefWidth="321.0" promptText="Buscar Armazon, Marca, Modelo, Material o ID" />
+      <Label layoutX="21.0" layoutY="68.0" text="BUSCAR ARMAZON">
+         <font>
+            <Font name="Malgun Gothic" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="CarritoTableview" layoutX="818.0" layoutY="155.0" prefHeight="213.0" prefWidth="363.0">
+        <columns>
+          <TableColumn fx:id="ColMarcaCarrito" prefWidth="90.0" text="Marca" />
+          <TableColumn fx:id="ColModeloCarrito" prefWidth="165.0" text="Modelo" />
+            <TableColumn fx:id="ColPrecioCarrito" prefWidth="107.0" text="Precio" />
+        </columns>
+      </TableView>
+      <Button fx:id="BuscaArmaBtn" layoutX="354.0" layoutY="112.0" mnemonicParsing="false" onAction="#BuscarArmazon" prefHeight="15.0" prefWidth="78.0" style="-fx-background-color: #077bf0;" text="BUSCAR" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="839.0" layoutY="85.0" text="ARTICULOS SELECCIONADOS">
+         <font>
+            <Font name="Malgun Gothic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="GenVenta" layoutX="1194.0" layoutY="282.0" mnemonicParsing="false" onAction="#GeneraVentas" prefHeight="34.0" prefWidth="126.0" style="-fx-background-color: #39e648;" text="GENERAR VENTA" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="1187.0" layoutY="208.0" text="TOTAL A PAGAR:">
+         <font>
+            <Font name="Malgun Gothic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PrecioTotaltxt" layoutX="1187.0" layoutY="235.0" prefHeight="34.0" prefWidth="140.0" promptText="\\$ 0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="SeleccionarArmazon" layoutX="612.0" layoutY="378.0" mnemonicParsing="false" onAction="#SeleccionArma" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #7aadf5;" text="SELECCIONAR ARMAZON" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Vacia" layoutX="1055.0" layoutY="378.0" mnemonicParsing="false" onAction="#VaciaCarrito" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #abc0d1;" text="VACIAR" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Update" layoutX="21.0" layoutY="378.0" mnemonicParsing="false" onAction="#Actualiza" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #7aadf5;" text=" ACTUALIZAR TABLA " textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Cerrar" layoutX="1294.0" layoutY="8.0" mnemonicParsing="false" onAction="#Close" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: eb365a;" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="567.0" prefWidth="633.0" style="-fx-background-color: #f0f2f5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="optiexpress.Optometrista.RegGrad.RegistrarGraduacionVistaController">
+   <children>
+      <Label layoutX="161.0" layoutY="14.0" text="REGISTRO DE GRADUACION">
+         <font>
+            <Font name="Malgun Gothic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NomPacTxt" layoutX="15.0" layoutY="87.0" prefHeight="25.0" prefWidth="349.0" />
+      <Label layoutX="20.0" layoutY="59.0" text="Nombre completo de paciente">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EjeDerLejos" layoutX="14.0" layoutY="174.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="CilDerLejos" layoutX="166.0" layoutY="174.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="EsfDerLejos" layoutX="322.0" layoutY="174.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="PrismDerLejos" layoutX="485.0" layoutY="174.0" prefHeight="25.0" prefWidth="134.0" />
+      <Label layoutX="258.0" layoutY="128.0" text="Ojo Derecho Lejos">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="157.0" prefHeight="17.0" prefWidth="23.0" text="Eje">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="157.0" prefHeight="17.0" prefWidth="46.0" text="Cilindro">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="157.0" prefHeight="17.0" prefWidth="37.0" text="Esfera">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="534.0" layoutY="157.0" prefHeight="17.0" prefWidth="37.0" text="Prisma">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="213.0" text="Ojo Derecho Cerca">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EjeDerCerca" layoutX="14.0" layoutY="262.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="CilDerCerca" layoutX="166.0" layoutY="262.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="EsfDerCerca" layoutX="322.0" layoutY="262.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="PrismDerCerca" layoutX="485.0" layoutY="262.0" prefHeight="25.0" prefWidth="134.0" />
+      <Label layoutX="76.0" layoutY="245.0" prefHeight="17.0" prefWidth="23.0" text="Eje">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="245.0" prefHeight="17.0" prefWidth="46.0" text="Cilindro">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="245.0" prefHeight="17.0" prefWidth="37.0" text="Esfera">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="534.0" layoutY="245.0" prefHeight="17.0" prefWidth="37.0" text="Prisma">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="256.0" layoutY="310.0" text="Ojo Izquierdo Lejos">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EjeIzqLejos" layoutX="14.0" layoutY="355.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="CilIzqLejos" layoutX="166.0" layoutY="355.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="EsfIzqLejos" layoutX="322.0" layoutY="355.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="PrismIzqLejos" layoutX="485.0" layoutY="355.0" prefHeight="25.0" prefWidth="134.0" />
+      <Label layoutX="70.0" layoutY="338.0" prefHeight="17.0" prefWidth="23.0" text="Eje">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="338.0" prefHeight="17.0" prefWidth="46.0" text="Cilindro">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="338.0" prefHeight="17.0" prefWidth="37.0" text="Esfera">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="534.0" layoutY="338.0" prefHeight="17.0" prefWidth="37.0" text="Prisma">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="254.0" layoutY="394.0" text="Ojo Izquierdo Cerca">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EjeIzqCerca" layoutX="14.0" layoutY="435.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="CilIzqCerca" layoutX="166.0" layoutY="435.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="EsfIzqCerca" layoutX="322.0" layoutY="435.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="PrismIzqCerca" layoutX="485.0" layoutY="435.0" prefHeight="25.0" prefWidth="134.0" />
+      <Label layoutX="70.0" layoutY="418.0" prefHeight="17.0" prefWidth="23.0" text="Eje">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="418.0" prefHeight="17.0" prefWidth="46.0" text="Cilindro">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="418.0" prefHeight="17.0" prefWidth="37.0" text="Esfera">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="534.0" layoutY="418.0" prefHeight="17.0" prefWidth="37.0" text="Prisma">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="RegGrad" layoutX="382.0" layoutY="496.0" mnemonicParsing="false" onAction="#RegistrarGraduacion" prefHeight="26.0" prefWidth="182.0" style="-fx-background-color: #39e648;" text="REGISTRAR GRADUACION" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Limpiar" layoutX="75.0" layoutY="496.0" mnemonicParsing="false" onAction="#LimpiarCampos" prefHeight="26.0" prefWidth="182.0" style="-fx-background-color: #55a6ed;" text="LIMPIAR CAMPOS" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Cerrar" layoutX="592.0" layoutY="14.0" mnemonicParsing="false" onAction="#Close" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: eb365a;" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="315.0" prefWidth="656.0" style="-fx-background-color: #f0f2f5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="optiexpress.Admin.AdminVistaController">
+   <children>
+      <Button fx:id="Logout" layoutX="522.0" layoutY="27.0" mnemonicParsing="false" onAction="#Cerrarsesion" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: eb365a;" text="Cerrar Sesion" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="226.0" layoutY="39.0" text="Menu principal">
+         <font>
+            <Font name="Malgun Gothic" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="30.0" text="ADMINISTRADOR">
+         <font>
+            <Font name="Malgun Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="EditaArmazon" layoutX="90.0" layoutY="167.0" mnemonicParsing="false" onAction="#EditarArmazon" prefHeight="98.0" prefWidth="170.0" style="-fx-background-color: #077bf0;" text="Edicion de Armazones" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="VisualizaVentas" layoutX="406.0" layoutY="167.0" mnemonicParsing="false" onAction="#VerVentas" prefHeight="98.0" prefWidth="170.0" style="-fx-background-color: #077bf0;" text="Visualizar ventas" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

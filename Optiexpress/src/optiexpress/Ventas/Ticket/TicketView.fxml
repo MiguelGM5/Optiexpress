@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="optiexpress.Ventas.Ticket.TicketViewController">
+   <children>
+      <Label layoutX="262.0" layoutY="14.0" prefHeight="42.0" prefWidth="152.0" text="OPTIEXPRESS">
+         <font>
+            <Font name="Consolas Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="77.0" prefHeight="42.0" prefWidth="404.0" text="------------------------------------------------------------------">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="56.0" prefHeight="42.0" prefWidth="67.0" text="Fecha:">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelFecha" layoutX="85.0" layoutY="56.0" prefHeight="42.0" prefWidth="119.0" text="Anonimo">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="119.0" prefHeight="42.0" prefWidth="91.0" text="Vendedor:">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNombreUser" layoutX="128.0" layoutY="119.0" prefHeight="42.0" prefWidth="286.0" text="Anonimo">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="161.0" prefHeight="42.0" prefWidth="141.0" text="Forma de Pago:">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="42.0" prefWidth="166.0" text="TICKET DE COMPRA">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewTicket" layoutX="32.0" layoutY="215.0" prefHeight="187.0" prefWidth="373.0">
+         <columns>
+            <TableColumn fx:id="IDArmaColumn" prefWidth="89.0" text="ID Armazon" />
+            <TableColumn fx:id="MarcaColumn" prefWidth="89.0" text="Marca" />
+            <TableColumn fx:id="modeloColumn" minWidth="0.0" prefWidth="106.0" text="Modelo" />
+            <TableColumn fx:id="precioColumn" minWidth="8.0" prefWidth="88.0" text="Precio" />
+         </columns>
+      </TableView>
+      <Label layoutX="39.0" layoutY="426.0" prefHeight="42.0" prefWidth="130.0" text="Monto Total:">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPrecio" layoutX="169.0" layoutY="426.0" prefHeight="42.0" prefWidth="169.0" text="\\$ 0">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="396.0" prefHeight="42.0" prefWidth="404.0" text="------------------------------------------------------------------">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="FormasPago" layoutX="159.0" layoutY="169.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+   </children>
+</AnchorPane>
